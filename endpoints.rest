@@ -1,4 +1,40 @@
 ### variables
 
 
-@url = ttp://localhost:3000/api/v1
+@url = http://localhost:3000/api/v1
+@menuid = 675ddd886f0c1533936a75de
+@eventid = 675df2566f0c1533936a8014
+
+### get all menu items
+GET {{url}}/food-truck/menu
+
+### get all events
+GET {{url}}/food-truck/events
+
+### get menu item by id
+GET {{url}}/food-truck/menu/{{menuid}}
+
+### get event by id
+GET {{url}}/food-truck/events/{{eventid}}
+
+### add new menu item
+POST {{url}}/food-truck/menu
+Content-Type: application/json
+
+{
+    "name": "Chips and Guacamole",
+    "description": "Delightful guacamole and chips, made fresh",
+    "price": 6,
+    "url": "imageurl5"
+}
+
+### add new event
+POST {{url}}/food-truck/events
+Content-Type: application/json
+
+{
+    "name": "JPEGMAFIA Album Release",
+    "location": "1539 N. Calvert",
+    "date": "January 19th",
+    "time": "8pm-1am"
+}
