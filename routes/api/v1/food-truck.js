@@ -2,8 +2,11 @@
 const router = require('express').Router()
 const { getCollection, ObjectId } = require('../../../dbconnect')
 
+
 let collection = null
 
+
+// get collection functions
 const getMenuItems = async () => {
     let collection = null
     if (!collection) collection = await getCollection('FoodTruckAPI', 'MenuItems')
@@ -19,6 +22,7 @@ const getEvents = async () => {
 
 
 
+// API routes
 
 router.get('/menu', async (request, response) => {
     const collection = await getMenuItems()
@@ -26,13 +30,11 @@ router.get('/menu', async (request, response) => {
     response.send(found)
 })
 
-
 router.get('/events', async (request, response) => {
     const collection = await getEvents()
     const found = await collection.find().toArray()
     response.send(found)
 })
-
 
 router.get('/menu/:id', async (request, response) => {
     const { id } = request.params
@@ -63,5 +65,7 @@ router.post('/events', async (request, response) => {
     const { acknowledged, insertedId } = await collection.insertOne({ name, location, date, time })
     response.send({ acknowledged, insertedId })
 })
+
+
 
 module.exports = router
