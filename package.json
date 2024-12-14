@@ -11,6 +11,7 @@
   "description": "Food Truck",
   "dependencies": {
     "express": "^4.21.2",
+    "mongodb": "^6.3.0",
     "node-fetch": "^2.7.0"
   }
 }
