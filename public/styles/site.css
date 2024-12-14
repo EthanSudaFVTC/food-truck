@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
+    color: darkslateblue;
+}
+
+header {
+    background-color: darkslateblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: darkslateblue;
+}
+
+#menu, #events, #create-events{
+    margin: 20px;
+    padding: 20px;
+    background-color: floralwhite;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
