@@ -16,7 +16,7 @@ h2 {
     color: darkslateblue;
 }
 
-#menu, #events, #create-events{
+#menu, #events, #create-events, #details{
     margin: 20px;
     padding: 20px;
     background-color: floralwhite;
