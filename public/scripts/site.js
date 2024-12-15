@@ -45,4 +45,7 @@
         console.error('Error fetching events:', error);
     }
 
+
+    
+
 })();
