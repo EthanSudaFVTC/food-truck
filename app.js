@@ -24,7 +24,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/event/:eventId', (request, response) => {
-    response.sendFile('events.html', { root })
+    response.sendFile('event.html', { root })
 })
 
 app.get('/admin', (request, response) => {
