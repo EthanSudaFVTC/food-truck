@@ -23,9 +23,9 @@
         e.preventDefault() // prevents page from not showing error
         const newEvent = {
             name: document.getElementById('event-name').value, 
-            description: document.getElementById('event-location').value, 
-            price: document.getElementById('event-date').value, 
-            url: document.getElementById('event-time').value
+            location: document.getElementById('event-location').value, 
+            date: document.getElementById('event-date').value, 
+            time: document.getElementById('event-time').value
         }
         fetch('api/v1/food-truck/events', {
             method: 'POST',

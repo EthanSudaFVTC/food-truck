@@ -14,7 +14,7 @@
                 <h3>${item.name}</h3>
                 <p>${item.description}</p>
                 <p>Price: $${item.price}</p>
-                <img src="${item.url}" alt="${item.name}" />
+                <img src="${item.url}" alt="${item.name}" width="300" />
             `;
             menu.appendChild(menuItemsDiv);
         });

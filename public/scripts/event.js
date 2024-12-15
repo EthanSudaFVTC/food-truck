@@ -1,5 +1,5 @@
 (async () => {
-const { pathname } = window.location
+    const { pathname } = window.location
     const [, searchType, id ] = pathname.split('/')
     
     const url = (() => {
