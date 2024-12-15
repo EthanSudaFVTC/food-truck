@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/site.css">
-    <script src="/scripts/site.js" defer></script>
+    <script src="/scripts/admin.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,9 +13,26 @@
     </header>
     <main>
         <section>
-            <h2>Add Menu Item</h2>
+            <form id="add-menu-item">
+                <h2>Add Menu Item</h2>
+                <input type="text" id="menu-item-name" placeholder="name" />
+                <input type="text" id="menu-item-description" placeholder="description" />
+                <input type="text" id="menu-item-price" placeholder="price" />
+                <input type="text" id="menu-item-url" placeholder="image url" />
+                <button type="submit">Add Menu Item</button>
+            </form>
+            <h3 id="menu-item-added"></h3>
+        </section>
 
-            <h2>Add Event</h2>
+        <section>
+            <form id="add-event">
+                <h2>Add Event</h2>
+                <input type="text" id="event-name" placeholder="name" />
+                <input type="text" id="event-location" placeholder="location" />
+                <input type="text" id="event-date" placeholder="date" />
+                <input type="text" id="event-time" placeholder="time" />
+                <button type="submit">Add Event</button>
+            </form>
         </section>
     </main>
 </body>

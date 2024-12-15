@@ -24,25 +24,11 @@ app.get('/', (request, response) => {
 })
 
 app.get('/event/:eventId', (request, response) => {
-    response.sendFile('event.html', { root })
+    response.sendFile('events.html', { root })
 })
 
 app.get('/admin', (request, response) => {
-    response.sendFile('index.html', { root })
+    response.sendFile('admin.html', { root })
 })
-
-
-// router.get('/', async (request, response) => {
-//     response.sendFile('index.html', { root })
-// })
-
-// router.get('/event/:eventId', async (request, response) => {
-//     response.sendFile('index.html', { root })
-// })
-
-// router.get('/admin', async (request, response) => {
-//     response.sendFile('index.html', { root })
-// })
-
 
 app.listen(port, () => console.log(`http://localhost:${port}`))
